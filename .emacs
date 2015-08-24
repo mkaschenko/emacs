@@ -32,8 +32,9 @@
 
 ;; auto-complete
 (global-auto-complete-mode t)
-(add-hook 'text-mode-hook 'auto-complete-mode)
+(setq ac-ignore-case nil)
 (ac-flyspell-workaround)
+(add-hook 'text-mode-hook 'auto-complete-mode)
 
 ;; flyspell
 (add-hook 'text-mode-hook 'flyspell-mode)
