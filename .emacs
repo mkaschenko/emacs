@@ -42,8 +42,6 @@
 (add-hook 'emacs-lisp-mode-hook 'flyspell-prog-mode)
 (setq ispell-dictionary "en_GB")
 
-;; rubocop
-(add-hook 'ruby-mode-hook 'rubocop-mode)
 
 ;; projectile
 (projectile-global-mode t)
@@ -67,6 +65,10 @@
 ;; inf-ruby
 (global-set-key (kbd "C-c i") 'inf-ruby)
 (global-set-key (kbd "C-c c") 'inf-ruby-console-rails)
+
+;; rubocop
+(add-hook 'ruby-mode-hook 'rubocop-mode)
+(global-set-key (kbd "C-c r") 'rubocop-check-current-file)
 
 ;; shell
 (global-set-key (kbd "C-c s") 'eshell)
