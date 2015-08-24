@@ -58,6 +58,7 @@
 (setq sp-autoescape-string-quote nil)
 
 ;; magit
+(setq magit-fetch-arguments (quote ("--prune")))
 (global-set-key (kbd "C-c g") 'magit-status)
 
 ;; yari
