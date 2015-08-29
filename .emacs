@@ -9,7 +9,6 @@
 (menu-bar-mode -1)
 
 ;; line numbers
-(global-linum-mode t)
 (setq linum-format "%3d ")
 
 ;; theme
@@ -82,3 +81,7 @@
 
 ;; ruby mode
 (setq ruby-insert-encoding-magic-comment nil)
+(add-hook 'ruby-mode-hook 'linum-mode)
+
+;; emacs-lisp mode
+(add-hook 'emacs-lisp-mode-hook 'linum-mode)
