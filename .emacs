@@ -78,6 +78,7 @@
 (setq org-todo-keyword-faces
       '(("TODO" . (:background "pink" :weight bold))
 	("STARTED" . (:background "khaki" :weight bold))))
+(add-to-list 'auto-mode-alist '("\\.txt\\'" . org-mode))
 
 ;; ruby mode
 (setq ruby-insert-encoding-magic-comment nil)
