@@ -73,11 +73,12 @@
 (global-set-key (kbd "C-c s") 'eshell)
 
 ;; org mode
-(setq org-todo-keywords
-      '((sequence "TODO" "STARTED" "|" "DONE")))
-(setq org-todo-keyword-faces
-      '(("TODO" . (:background "pink" :weight bold))
-	("STARTED" . (:background "khaki" :weight bold))))
+(setq
+ org-todo-keywords
+ '((sequence "TODO" "STARTED" "|" "DONE"))
+ org-todo-keyword-faces
+ '(("TODO" . (:background "pink" :weight bold))
+   ("STARTED" . (:background "khaki" :weight bold))))
 (add-to-list 'auto-mode-alist '("\\.txt\\'" . org-mode))
 
 ;; ruby mode
