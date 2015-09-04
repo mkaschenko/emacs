@@ -57,6 +57,7 @@
 ;; magit
 (setq magit-fetch-arguments (quote ("--prune")))
 (global-set-key (kbd "C-c g") 'magit-status)
+(global-set-key (kbd "C-c b") 'magit-blame)
 
 ;; yari
 (global-set-key (kbd "C-c d") 'yari)
