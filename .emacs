@@ -52,7 +52,6 @@
 (require 'smartparens-config)
 
 (smartparens-global-mode t)
-(show-smartparens-global-mode t)
 (setq sp-autoescape-string-quote nil)
 
 ;; magit
@@ -89,3 +88,4 @@
 
 ;; emacs-lisp mode
 (add-hook 'emacs-lisp-mode-hook 'linum-mode)
+(add-hook 'emacs-lisp-mode-hook 'show-smartparens-mode)
