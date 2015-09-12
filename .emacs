@@ -45,8 +45,24 @@
 ;; projectile
 (projectile-global-mode t)
 
+;; ido
+(require 'ido)
+(ido-mode t)
+(ido-everywhere t)
+
+;; ido-ubiquitous
+(require 'ido-ubiquitous)
+(ido-ubiquitous-mode t)
+
+;; idomenu
+(global-set-key (kbd "C-c m") 'idomenu)
+
 ;; fuzzy matching for ido
 (flx-ido-mode t)
+
+;; smex
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
 ;; smartparens
 (require 'smartparens-config)
@@ -55,6 +71,7 @@
 (setq sp-autoescape-string-quote nil)
 
 ;; magit
+(setq magit-completing-read-function 'magit-ido-completing-read)
 (setq magit-fetch-arguments (quote ("--prune")))
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-c b") 'magit-blame)
@@ -80,6 +97,7 @@
  org-todo-keyword-faces
  '(("TODO" . (:background "pink" :weight bold))
    ("STARTED" . (:background "khaki" :weight bold))))
+(setq org-completion-use-ido t)
 (add-to-list 'auto-mode-alist '("\\.txt\\'" . org-mode))
 
 ;; ruby mode
