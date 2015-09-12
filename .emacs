@@ -73,6 +73,7 @@
 ;; magit
 (setq magit-completing-read-function 'magit-ido-completing-read)
 (setq magit-fetch-arguments (quote ("--prune")))
+(setq magit-pull-arguments (quote ("--rebase")))
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-c b") 'magit-blame)
 
