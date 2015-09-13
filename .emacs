@@ -36,11 +36,10 @@
 (add-hook 'text-mode-hook 'auto-complete-mode)
 
 ;; flyspell
+(setq ispell-dictionary "en_GB")
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'ruby-mode-hook 'flyspell-prog-mode)
 (add-hook 'emacs-lisp-mode-hook 'flyspell-prog-mode)
-(setq ispell-dictionary "en_GB")
-
 
 ;; projectile
 (projectile-global-mode t)
@@ -108,3 +107,6 @@
 ;; emacs-lisp mode
 (add-hook 'emacs-lisp-mode-hook 'linum-mode)
 (add-hook 'emacs-lisp-mode-hook 'show-smartparens-mode)
+
+;; browser
+(global-set-key (kbd "C-c w") 'browse-web)
