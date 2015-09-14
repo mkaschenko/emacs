@@ -25,20 +25,14 @@
 		"%[%m%]")))
 (setq line-number-mode nil)
 
-;; white-spaces
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; auto-complete
 (global-auto-complete-mode t)
 (setq ac-ignore-case nil)
 (ac-flyspell-workaround)
-(add-hook 'text-mode-hook 'auto-complete-mode)
 
 ;; flyspell
 (setq ispell-dictionary "en_GB")
-(add-hook 'text-mode-hook 'flyspell-mode)
-(add-hook 'ruby-mode-hook 'flyspell-prog-mode)
-(add-hook 'emacs-lisp-mode-hook 'flyspell-prog-mode)
 
 ;; projectile
 (projectile-global-mode t)
@@ -82,7 +76,6 @@
 (global-set-key (kbd "C-c c") 'inf-ruby-console-rails)
 
 ;; rubocop
-(add-hook 'ruby-mode-hook 'rubocop-mode)
 (global-set-key (kbd "C-c r") 'rubocop-check-current-file)
 
 ;; shell
@@ -101,10 +94,19 @@
 ;; ruby mode
 (setq ruby-insert-encoding-magic-comment nil)
 (add-hook 'ruby-mode-hook 'linum-mode)
+(add-hook 'ruby-mode-hook 'flyspell-prog-mode)
+(add-hook 'ruby-mode-hook 'rubocop-mode)
 
 ;; emacs-lisp mode
 (add-hook 'emacs-lisp-mode-hook 'linum-mode)
+(add-hook 'emacs-lisp-mode-hook 'flyspell-prog-mode)
 (add-hook 'emacs-lisp-mode-hook 'show-smartparens-mode)
 
 ;; browser
 (global-set-key (kbd "C-c w") 'browse-web)
+;; text mode
+(add-hook 'text-mode-hook 'auto-complete-mode)
+(add-hook 'text-mode-hook 'flyspell-mode)
+
+;; white-spaces
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
