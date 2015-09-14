@@ -1,6 +1,5 @@
 ;; melpa
 (require 'package)
-
 (add-to-list 'package-archives
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 (package-initialize)
@@ -65,7 +64,6 @@
 
 ;; smartparens
 (require 'smartparens-config)
-
 (smartparens-global-mode t)
 (setq sp-autoescape-string-quote nil)
 
