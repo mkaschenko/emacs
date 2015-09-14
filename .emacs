@@ -25,6 +25,8 @@
 		"%[%m%]")))
 (setq line-number-mode nil)
 
+;; browser
+(global-set-key (kbd "C-c w") 'browse-web)
 
 ;; auto-complete
 (global-auto-complete-mode t)
@@ -49,12 +51,12 @@
 ;; idomenu
 (global-set-key (kbd "C-c m") 'idomenu)
 
-;; fuzzy matching for ido
-(flx-ido-mode t)
-
 ;; smex
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+
+;; fuzzy matching for ido
+(flx-ido-mode t)
 
 ;; smartparens
 (require 'smartparens-config)
@@ -82,13 +84,13 @@
 (global-set-key (kbd "C-c s") 'eshell)
 
 ;; org mode
+(setq org-completion-use-ido t)
 (setq
  org-todo-keywords
  '((sequence "TODO" "STARTED" "|" "DONE"))
  org-todo-keyword-faces
  '(("TODO" . (:background "pink" :weight bold))
    ("STARTED" . (:background "khaki" :weight bold))))
-(setq org-completion-use-ido t)
 (add-to-list 'auto-mode-alist '("\\.txt\\'" . org-mode))
 
 ;; ruby mode
@@ -102,8 +104,6 @@
 (add-hook 'emacs-lisp-mode-hook 'flyspell-prog-mode)
 (add-hook 'emacs-lisp-mode-hook 'show-smartparens-mode)
 
-;; browser
-(global-set-key (kbd "C-c w") 'browse-web)
 ;; text mode
 (add-hook 'text-mode-hook 'auto-complete-mode)
 (add-hook 'text-mode-hook 'flyspell-mode)
