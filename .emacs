@@ -108,5 +108,10 @@
 (add-hook 'text-mode-hook 'auto-complete-mode)
 (add-hook 'text-mode-hook 'flyspell-mode)
 
+;; haml mode
+(add-hook 'haml-mode-hook 'linum-mode)
+(add-hook 'haml-mode-hook 'auto-complete-mode)
+(add-hook 'haml-mode-hook 'flyspell-prog-mode)
+
 ;; white-spaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
