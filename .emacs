@@ -83,6 +83,11 @@
 ;; shell
 (global-set-key (kbd "C-c s") 'eshell)
 
+;; multiple cursors
+(require 'multiple-cursors)
+(global-set-key (kbd "C-c .") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-c /") 'mc/mark-all-like-this)
+
 ;; org mode
 (setq org-completion-use-ido t)
 (setq
