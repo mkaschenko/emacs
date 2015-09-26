@@ -38,6 +38,7 @@
 
 ;; projectile
 (projectile-global-mode t)
+(setq projectile-tags-command "ripper-tags -Re -f TAGS")
 
 ;; ido
 (require 'ido)
