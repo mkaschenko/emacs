@@ -23,7 +23,7 @@
 		mode-line-buffer-identification "       "
 		mode-line-position "       "
 		"%[%m%]")))
-(setq line-number-mode nil)
+(setq column-number-mode t)
 
 ;; browser
 (global-set-key (kbd "C-c w") 'browse-web)
