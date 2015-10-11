@@ -49,6 +49,9 @@
 (require 'ido-ubiquitous)
 (ido-ubiquitous-mode t)
 
+;; ido-yes-or-no
+(ido-yes-or-no-mode t)
+
 ;; idomenu
 (global-set-key (kbd "C-c m") 'idomenu)
 
