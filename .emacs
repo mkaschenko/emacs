@@ -1,3 +1,10 @@
+;; clear eshell buffer
+(defun eshell-clear-buffer ()
+  (interactive)
+  (let ((inhibit-read-only t))
+    (erase-buffer)
+    (eshell-send-input)))
+
 ;; melpa
 (require 'package)
 (add-to-list 'package-archives
