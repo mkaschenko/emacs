@@ -92,6 +92,10 @@
 (global-set-key (kbd "C-c .") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c /") 'mc/mark-all-like-this)
 
+;; expand region
+(require 'expand-region)
+(global-set-key (kbd "C-c e") 'er/expand-region)
+
 ;; org mode
 (setq org-completion-use-ido t)
 (setq
@@ -124,5 +128,6 @@
 
 ;; javascript mode
 (add-hook 'js-mode-hook 'linum-mode)
+
 ;; white-spaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
