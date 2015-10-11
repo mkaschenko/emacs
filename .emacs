@@ -5,6 +5,10 @@
     (erase-buffer)
     (eshell-send-input)))
 
+;; zap up to char
+(require 'misc)
+(global-set-key (kbd "M-Z") 'zap-up-to-char)
+
 ;; melpa
 (require 'package)
 (add-to-list 'package-archives
