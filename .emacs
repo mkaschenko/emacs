@@ -92,7 +92,7 @@
 
 ;; inf-ruby
 (global-set-key (kbd "C-c i") 'inf-ruby)
-(global-set-key (kbd "C-c c") 'inf-ruby-console-rails)
+(global-set-key (kbd "C-c c") 'inf-ruby-console-auto)
 
 ;; rubocop
 (global-set-key (kbd "C-c r") 'rubocop-check-current-file)
