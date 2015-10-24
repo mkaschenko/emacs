@@ -142,5 +142,9 @@
 ;; javascript mode
 (add-hook 'js-mode-hook 'linum-mode)
 
+;; rspec mode
+(setq rspec-autosave-buffer t)
+(setq rspec-use-rake-when-possible nil)
+
 ;; white-spaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
