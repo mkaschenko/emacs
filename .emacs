@@ -1,6 +1,9 @@
 ;; my own functions
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
+(require 'my-previous-window)
+(global-set-key (kbd "C-x p") 'my-previous-window)
+
 (require 'my-eshell-clear-buffer)
 
 
