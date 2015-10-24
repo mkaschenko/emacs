@@ -1,9 +1,8 @@
-;; clear eshell buffer
-(defun eshell-clear-buffer ()
-  (interactive)
-  (let ((inhibit-read-only t))
-    (erase-buffer)
-    (eshell-send-input)))
+;; my own functions
+(add-to-list 'load-path "~/.emacs.d/elisp/")
+
+(require 'my-eshell-clear-buffer)
+
 
 ;; zap up to char
 (require 'misc)
