@@ -89,6 +89,7 @@
 (setq magit-pull-arguments (quote ("--rebase")))
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-c b") 'magit-blame)
+(global-set-key (kbd "C-c l") 'magit-log-buffer-file)
 
 ;; yari
 (global-set-key (kbd "C-c d") 'yari)
