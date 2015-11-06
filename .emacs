@@ -53,9 +53,6 @@
 (projectile-global-mode t)
 (setq projectile-tags-command "ripper-tags -Re -f TAGS")
 
-;; ag
-(setq ag-highlight-search t)
-
 ;; ido
 (require 'ido)
 (ido-mode t)
@@ -152,6 +149,10 @@
 
 ;; slim mode
 (add-hook 'slim-mode 'linum-mode)
+
+;; ag mode
+(setq ag-highlight-search t)
+(add-hook 'ag-mode-hook 'toggle-truncate-lines)
 
 ;; white-spaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
