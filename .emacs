@@ -149,7 +149,7 @@
 (setq rspec-use-rake-when-possible nil)
 
 ;; slim mode
-(add-hook 'slim-mode 'linum-mode)
+(add-hook 'slim-mode-hook 'linum-mode)
 
 ;; ag mode
 (setq ag-highlight-search t)
