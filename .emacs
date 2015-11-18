@@ -157,3 +157,6 @@
 
 ;; white-spaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; backups
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
