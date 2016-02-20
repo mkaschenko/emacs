@@ -1,10 +1,5 @@
 ;; TODO: split right and move there C-x 3
 ;;       split down and move there C-x 2
-;;
-;;       If you set set-mark-command-repeat-pop to non-nil,
-;;       then immediately after you type C-u C-SPC,
-;;       you can type C-SPC instead of C-u C-SPC to cycle through the
-;;       mark ring. By default, set-mark-command-repeat-pop is nil.
 (require 'misc)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
