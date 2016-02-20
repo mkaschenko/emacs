@@ -4,4 +4,6 @@
 (dolist (hook mkaschenko/programming-mode-hooks)
   (add-hook hook 'flyspell-prog-mode))
 
+(global-set-key (kbd "C-M-y") 'flyspell-auto-correct-previous-word)
+
 (provide 'init-flyspell)
