@@ -11,7 +11,7 @@
 (require 'init-winner)
 (require 'init-org)
 (require 'init-magit)
-(require 'init-eshell)
+(require 'init-shells)
 (require 'init-browser)
 (require 'init-projectile)
 (require 'init-expand-region)
