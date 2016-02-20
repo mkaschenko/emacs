@@ -3,8 +3,6 @@
 
 (setq mkaschenko/programming-mode-hooks
       (append mkaschenko/lisp-programming-mode-hooks
-	      '(ruby-mode-hook
-		haml-mode-hook slim-mode-hook
-		js-mode-hook jsx-mode-hook)))
+	      '(ruby-mode-hook haml-mode-hook slim-mode-hook web-mode-hook)))
 
 (provide 'init-programming-mode-hooks)

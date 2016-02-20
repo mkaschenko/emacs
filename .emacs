@@ -22,3 +22,4 @@
 (require 'init-eldoc)
 (require 'init-misc)
 (require 'init-multiple-cursors)
+(require 'init-web-mode)
