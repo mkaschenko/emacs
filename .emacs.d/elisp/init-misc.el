@@ -9,6 +9,7 @@
 (defun mkaschenko/previous-window (count)
   (interactive "p")
   (other-window (- count)))
+(global-aggressive-indent-mode 1)
 
 (defun mkaschenko/erase-buffer ()
   (interactive)
