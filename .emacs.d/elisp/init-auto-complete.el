@@ -1,3 +1,4 @@
+;; TODO: company-mode vs auto-complete-mode
 (setq ac-ignore-case nil)
 
 (global-auto-complete-mode t)
