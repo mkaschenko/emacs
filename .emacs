@@ -21,3 +21,4 @@
 (require 'init-smartparens)
 (require 'init-eldoc)
 (require 'init-misc)
+(require 'init-multiple-cursors)
