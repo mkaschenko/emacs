@@ -5,6 +5,7 @@
 (setq rspec-autosave-buffer t)
 
 ;;(add-hook 'ruby-mode-hook 'rubocop-mode)
+(add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
 (global-set-key (kbd "C-c i") 'inf-ruby)
 (global-set-key (kbd "C-c c") 'inf-ruby-console-auto)
