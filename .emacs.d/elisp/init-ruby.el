@@ -1,4 +1,3 @@
-;; TODO: replace Rubocop by Flycheck (w/o automatic checking)
 (setq ruby-insert-encoding-magic-comment nil)
 (setq inf-ruby-default-implementation "pry")
 (setq projectile-tags-command "ripper-tags -Re -f TAGS")
