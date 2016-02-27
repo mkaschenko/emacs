@@ -1,5 +1,4 @@
-;; TODO: use stable melpa
-;;       think about cask
+;; TODO: think about cask
 (require 'package)
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
