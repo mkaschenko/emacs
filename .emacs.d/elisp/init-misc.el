@@ -1,5 +1,3 @@
-;; TODO: split right and move there C-x 3
-;;       split down and move there C-x 2
 (require 'misc)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
