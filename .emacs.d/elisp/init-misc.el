@@ -4,8 +4,6 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(global-aggressive-indent-mode 1)
-
 (defun mkaschenko/erase-buffer ()
   (interactive)
   (let ((inhibit-read-only t))

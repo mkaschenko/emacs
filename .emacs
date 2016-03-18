@@ -24,3 +24,4 @@
 (require 'init-multiple-cursors)
 (require 'init-web-mode)
 (require 'init-dash-at-point)
+(require 'init-aggressive-indent)
