@@ -23,3 +23,4 @@
 (require 'init-misc)
 (require 'init-multiple-cursors)
 (require 'init-web-mode)
+(require 'init-dash-at-point)
