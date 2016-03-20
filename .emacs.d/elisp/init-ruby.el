@@ -3,7 +3,6 @@
 (setq projectile-tags-command "ripper-tags -Re -f TAGS")
 (setq rspec-autosave-buffer t)
 
-;;(add-hook 'ruby-mode-hook 'rubocop-mode)
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
 (global-set-key (kbd "C-c i") 'inf-ruby)
