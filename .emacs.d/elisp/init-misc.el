@@ -19,5 +19,6 @@
 (global-set-key (kbd "C-j") 'delete-indentation)
 (global-set-key (kbd "C-c r") 'query-replace)
 (global-set-key (kbd "C-x P") 'previous-buffer)
+(global-set-key (kbd "C-c ;") 'mkaschenko/toggle-comment-on-line)
 
 (provide 'init-misc)
