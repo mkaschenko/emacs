@@ -5,7 +5,6 @@
 (require 'init-programming-mode-hooks)
 (require 'init-linum)
 (require 'init-flyspell)
-(require 'init-auto-complete)
 (require 'init-ido)
 (require 'init-imenu)
 (require 'init-ibuffer)
