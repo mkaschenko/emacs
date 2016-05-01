@@ -2,7 +2,8 @@
 
 (dolist (hook mkaschenko/lisp-programming-mode-hooks)
   (add-hook hook 'enable-paredit-mode)
-  (add-hook hook 'eldoc-mode))
+  (add-hook hook 'eldoc-mode)
+  (add-hook hook 'show-smartparens-mode))
 
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 (add-hook 'cider-repl-mode-hook 'eldoc-mode)
