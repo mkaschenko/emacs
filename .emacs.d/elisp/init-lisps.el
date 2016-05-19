@@ -11,5 +11,6 @@
 
 (require 'paredit)
 (define-key paredit-mode-map (kbd "C-j") 'delete-indentation)
+(define-key paredit-mode-map (kbd "C-x j") 'paredit-newline)
 
 (provide 'init-lisps)
