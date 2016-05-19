@@ -8,4 +8,6 @@
 (add-hook 'text-mode-hook 'turn-on-smartparens-mode)
 (add-hook 'inf-ruby-mode-hook 'turn-on-smartparens-mode)
 
+(define-key smartparens-mode-map (kbd "C-M-w") 'sp-copy-sexp)
+
 (provide 'init-smartparens)
