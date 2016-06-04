@@ -7,6 +7,7 @@
 
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 (add-hook 'cider-repl-mode-hook 'eldoc-mode)
+(add-hook 'cider-repl-mode-hook 'show-smartparens-mode)
 (add-hook 'cider-mode-hook 'cider-auto-test-mode)
 
 (require 'paredit)
