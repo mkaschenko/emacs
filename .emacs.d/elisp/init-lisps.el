@@ -5,6 +5,9 @@
   (add-hook hook 'eldoc-mode)
   (add-hook hook 'show-smartparens-mode))
 
+(require 'cider)
+(define-key cider-mode-map (kbd "C-M-y") 'flyspell-auto-correct-previous-word)
+
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 (add-hook 'cider-repl-mode-hook 'eldoc-mode)
 (add-hook 'cider-repl-mode-hook 'show-smartparens-mode)
