@@ -11,6 +11,8 @@
   (cljr-add-keybindings-with-prefix "C-c C-m"))
 (add-hook 'clojure-mode-hook 'clj-refactor-mode-setup)
 
+(setq cljr-warn-on-eval nil)
+
 (require 'cider)
 (define-key cider-mode-map (kbd "C-M-y") 'flyspell-auto-correct-previous-word)
 
@@ -18,6 +20,8 @@
 (add-hook 'cider-repl-mode-hook 'eldoc-mode)
 (add-hook 'cider-repl-mode-hook 'show-smartparens-mode)
 (add-hook 'cider-mode-hook 'cider-auto-test-mode)
+
+(setq cider-prompt-save-file-on-load 'always-save)
 
 (require 'paredit)
 (define-key paredit-mode-map (kbd "C-j") 'delete-indentation)
