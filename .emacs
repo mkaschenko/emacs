@@ -12,7 +12,7 @@
 (require 'init-org)
 (require 'init-magit)
 (require 'init-shells)
-(require 'init-browser)
+(require 'init-browsers)
 (require 'init-projectile)
 (require 'init-expand-region)
 (require 'init-ag)

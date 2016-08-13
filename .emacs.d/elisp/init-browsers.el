@@ -6,4 +6,4 @@
 (global-set-key (kbd "C-c w") 'eww)
 (global-set-key (kbd "C-c W") 'mkaschenko/duckduckgo-search)
 
-(provide 'init-browser)
+(provide 'init-browsers)
