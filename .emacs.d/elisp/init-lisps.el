@@ -15,6 +15,7 @@
 
 (require 'cider)
 (define-key cider-mode-map (kbd "C-M-y") 'flyspell-auto-correct-previous-word)
+(define-key cider-mode-map (kbd "C-c M") 'complete-symbol)
 
 (add-hook 'cider-repl-mode-hook 'paredit-mode)
 (add-hook 'cider-repl-mode-hook 'eldoc-mode)
@@ -23,6 +24,7 @@
 
 (setq cider-prompt-save-file-on-load 'always-save)
 
+;;; http://mumble.net/~campbell/emacs/paredit.html
 (require 'paredit)
 (define-key paredit-mode-map (kbd "C-j") 'delete-indentation)
 (define-key paredit-mode-map (kbd "C-x j") 'paredit-newline)
