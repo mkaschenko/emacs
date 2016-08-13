@@ -14,7 +14,7 @@
 (require 'init-shells)
 (require 'init-browsers)
 (require 'init-projectile)
-(require 'init-expand-region)
+;; (require 'init-expand-region)
 (require 'init-ag)
 (require 'init-smartparens)
 (require 'init-ruby)
