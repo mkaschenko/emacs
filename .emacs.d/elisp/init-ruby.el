@@ -5,10 +5,10 @@
 
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
-(global-set-key (kbd "C-c i") 'inf-ruby)
-(global-set-key (kbd "C-c c") 'inf-ruby-console-auto)
-(global-set-key (kbd "C-c v") 'rubocop-check-current-file)
-(global-set-key (kbd "C-c V") 'rubocop-autocorrect-current-file)
-(global-set-key (kbd "C-c d") 'yari)
+;; (global-set-key (kbd "C-c i") 'inf-ruby)
+;; (global-set-key (kbd "C-c c") 'inf-ruby-console-auto)
+;; (global-set-key (kbd "C-c v") 'rubocop-check-current-file)
+;; (global-set-key (kbd "C-c V") 'rubocop-autocorrect-current-file)
+;; (global-set-key (kbd "C-c d") 'yari)
 
 (provide 'init-ruby)
