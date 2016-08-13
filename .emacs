@@ -25,3 +25,4 @@
 (require 'init-dash-at-point)
 (require 'init-aggressive-indent)
 (require 'init-subword)
+(require 'init-sql)
