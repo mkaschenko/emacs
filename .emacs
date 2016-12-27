@@ -28,6 +28,7 @@
 (require 'init-aggressive-indent)
 (require 'init-subword)
 (require 'init-sql)
+(require 'init-restclient)
 (require 'init-typescript)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
