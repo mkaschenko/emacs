@@ -24,7 +24,8 @@
 (add-hook 'cider-repl-mode-hook 'mkaschenko/setup-lisp)
 (add-hook 'cider-mode-hook 'cider-auto-test-mode)
 
-(setq cider-prompt-save-file-on-load 'always-save)
+(setq cider-prompt-save-file-on-load 'always-save
+      cider-prompt-for-symbol nil)
 
 ;;; http://mumble.net/~campbell/emacs/paredit.html
 (require 'paredit)
