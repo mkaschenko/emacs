@@ -37,7 +37,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (clojure-cheatsheet ts-comint tide typescript-mode yari yaml-mode web-mode smex smartparens slim-mode rubocop rspec-mode restclient projectile popup magit let-alist inf-ruby idomenu ido-yes-or-no ido-ubiquitous haml-mode gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dash-at-point clj-refactor buffer-move aggressive-indent ag))))
+    (magit-gh-pulls markdown-mode clojure-cheatsheet ts-comint tide typescript-mode yari yaml-mode web-mode smex smartparens slim-mode rubocop rspec-mode restclient projectile popup magit let-alist inf-ruby idomenu ido-yes-or-no ido-ubiquitous haml-mode gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dash-at-point clj-refactor buffer-move aggressive-indent ag))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

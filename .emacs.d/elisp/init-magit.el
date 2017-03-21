@@ -9,4 +9,7 @@
 (global-set-key (kbd "C-c b") 'magit-blame)
 (global-set-key (kbd "C-c l") 'magit-log-buffer-file)
 
+(require 'magit-gh-pulls)
+(add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
+
 (provide 'init-magit)
