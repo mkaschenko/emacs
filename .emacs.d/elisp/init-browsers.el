@@ -1,3 +1,5 @@
+(setq eww-search-prefix "https://duckduckgo.com/html/?kd=-1&q=")
+
 (defun mkaschenko/duckduckgo-search (query)
   (interactive "sDuckDuckGo: ")
   (browse-url
