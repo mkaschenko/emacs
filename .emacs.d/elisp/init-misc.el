@@ -2,6 +2,8 @@
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 
+(setq-default indent-tabs-mode nil)
+
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defun mkaschenko/erase-buffer ()
