@@ -3,6 +3,7 @@
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 
 (setq-default indent-tabs-mode nil)
+(setq require-final-newline 'visit-save)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
