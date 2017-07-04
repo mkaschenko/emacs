@@ -17,5 +17,6 @@
 (define-key ruby-mode-map (kbd "C-c v") 'rubocop-check-current-file)
 (define-key ruby-mode-map (kbd "C-c V") 'rubocop-autocorrect-current-file)
 (define-key ruby-mode-map (kbd "C-c d") 'yari)
+(define-key ruby-mode-map (kbd "C-c t") 'coverage-mode)
 
 (provide 'init-ruby)
