@@ -10,6 +10,7 @@
 
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 (add-hook 'inf-ruby-mode-hook 'mkaschenko/setup-inf-ruby)
+(add-hook 'ruby-mode-hook 'show-smartparens-mode)
 
 (require 'ruby-mode)
 (define-key ruby-mode-map (kbd "C-c i") 'inf-ruby)
