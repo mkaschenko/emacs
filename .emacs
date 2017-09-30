@@ -37,6 +37,34 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ibuffer-saved-filter-groups
+   (quote
+    (("Development"
+      ("Dired"
+       (derived-mode . dired-mode))
+      ("Compilations"
+       (derived-mode . compilation-mode))
+      ("Servers"
+       (name . ".*server"))
+      ("Magit"
+       (derived-mode . magit-mode))))))
+ '(ibuffer-saved-filters
+   (quote
+    (("gnus"
+      ((or
+        (mode . message-mode)
+        (mode . mail-mode)
+        (mode . gnus-group-mode)
+        (mode . gnus-summary-mode)
+        (mode . gnus-article-mode))))
+     ("programming"
+      ((or
+        (mode . emacs-lisp-mode)
+        (mode . cperl-mode)
+        (mode . c-mode)
+        (mode . java-mode)
+        (mode . idl-mode)
+        (mode . lisp-mode)))))))
  '(package-selected-packages
    (quote
     (indium coverage magit-gh-pulls markdown-mode clojure-cheatsheet ts-comint tide typescript-mode yari yaml-mode web-mode smex smartparens slim-mode rubocop rspec-mode restclient projectile popup magit let-alist inf-ruby idomenu ido-yes-or-no ido-ubiquitous haml-mode gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dash-at-point clj-refactor buffer-move aggressive-indent ag))))
