@@ -7,7 +7,7 @@
   (flycheck-mode +1)
   (eldoc-mode +1)
   (smartparens-mode +1)
-  (show-smartparens-mode +1)
+  (show-paren-mode +1)
   (linum-mode +1)
   (subword-mode +1)
   (tide-setup))

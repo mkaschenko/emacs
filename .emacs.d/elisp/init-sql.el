@@ -3,7 +3,7 @@
 (defun mkaschenko/setup-sql ()
   (interactive)
   (smartparens-mode +1)
-  (show-smartparens-mode +1)
+  (show-paren-mode +1)
   (aggressive-indent-mode -1)
   (flyspell-prog-mode))
 

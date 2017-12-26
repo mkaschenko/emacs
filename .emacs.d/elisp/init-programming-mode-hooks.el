@@ -2,7 +2,11 @@
   '(emacs-lisp-mode-hook clojure-mode-hook))
 
 (defvar mkaschenko/non-lisp-programming-mode-hooks
-  '(ruby-mode-hook haml-mode-hook slim-mode-hook web-mode-hook))
+  '(ruby-mode-hook
+    haml-mode-hook
+    slim-mode-hook
+    web-mode-hook
+    js2-mode-hook))
 
 (defvar mkaschenko/programming-mode-hooks
   (append mkaschenko/lisp-programming-mode-hooks

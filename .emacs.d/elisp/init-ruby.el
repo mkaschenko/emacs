@@ -5,12 +5,12 @@
 
 (defun mkaschenko/setup-inf-ruby ()
   (aggressive-indent-mode -1)
-  (show-smartparens-mode +1)
+  (show-paren-mode +1)
   (smartparens-mode +1))
 
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 (add-hook 'inf-ruby-mode-hook 'mkaschenko/setup-inf-ruby)
-(add-hook 'ruby-mode-hook 'show-smartparens-mode)
+(add-hook 'ruby-mode-hook 'show-paren-mode)
 
 (require 'ruby-mode)
 (define-key ruby-mode-map (kbd "C-c i") 'inf-ruby)

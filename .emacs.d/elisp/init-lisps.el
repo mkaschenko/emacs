@@ -3,7 +3,7 @@
 (defun mkaschenko/setup-lisp ()
   (enable-paredit-mode)
   (eldoc-mode)
-  (show-smartparens-mode))
+  (show-paren-mode))
 
 (dolist (hook mkaschenko/lisp-programming-mode-hooks)
   (add-hook hook 'mkaschenko/setup-lisp))
