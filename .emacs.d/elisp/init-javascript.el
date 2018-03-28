@@ -1,11 +1,7 @@
-(setq js-indent-level 2)
-
-(require 'js2-mode)
-(require 'js2-refactor)
-(require 'xref-js2)
-
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-mode))
+
+(setq js-indent-level 2)
 
 (add-hook 'js2-mode-hook #'js2-imenu-extras-mode)
 (add-hook 'js2-mode-hook #'js2-refactor-mode)

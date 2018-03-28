@@ -1,5 +1,3 @@
-(require 'dash-at-point)
-
 (defun mkaschenko/dash-at-point ()
   (interactive)
   (let ((thing (read-string "dash: " (thing-at-point 'symbol))))
