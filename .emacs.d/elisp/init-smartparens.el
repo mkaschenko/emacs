@@ -1,12 +1,8 @@
-(require 'smartparens-config)
-
 (setq sp-autoescape-string-quote nil)
 
-(dolist (hook mkaschenko/non-lisp-programming-mode-hooks)
-  (add-hook hook 'turn-on-smartparens-mode))
+(defun mkaschenko/setup-smartparens-keys ()
+  (define-key smartparens-mode-map (kbd "C-M-w") 'sp-copy-sexp))
 
-(add-hook 'text-mode-hook 'turn-on-smartparens-mode)
-
-(define-key smartparens-mode-map (kbd "C-M-w") 'sp-copy-sexp)
+(add-hook 'smartparens-mode-hook 'mkaschenko/setup-smartparens-keys)
 
 (provide 'init-smartparens)
