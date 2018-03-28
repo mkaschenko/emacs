@@ -10,7 +10,7 @@
 						   (concat "!clojure" rest)
 						 query))))))
 
-(global-set-key (kbd "C-c w") 'eww)
-(global-set-key (kbd "C-c W") 'mkaschenko/duckduckgo-search)
+(global-set-key (kbd "C-c W") 'eww)
+(global-set-key (kbd "C-c w") 'mkaschenko/duckduckgo-search)
 
 (provide 'init-browsers)
