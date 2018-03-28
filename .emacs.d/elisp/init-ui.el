@@ -1,9 +1,5 @@
 (menu-bar-mode -1)
 
-(add-to-list 'custom-theme-load-path
-	     "~/.emacs.d/themes/emacs-color-theme-solarized/")
-(load-theme 'solarized t)
-
 (setq-default mode-line-format
 	      '(" "
 		mode-line-modified " "
