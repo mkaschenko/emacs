@@ -1,5 +1,5 @@
 (defun mkaschenko/setup-sql ()
-  (flyspell-prog-mode +1)
+  (flyspell-prog-mode)
   (show-paren-mode +1)
   (smartparens-mode +1))
 
