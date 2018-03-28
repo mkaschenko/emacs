@@ -29,4 +29,6 @@
 (add-hook 'inf-ruby-mode-hook 'mkaschenko/setup-inf-ruby)
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
+(add-hook 'dired-mode-hook 'rspec-dired-mode)
+
 (provide 'init-ruby)
