@@ -1,11 +1,7 @@
-(require 'misc)
-
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
-
 (setq-default indent-tabs-mode nil)
-(setq require-final-newline 'visit-save)
 
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups"))
+      require-final-newline  'visit-save)
 
 (defun mkaschenko/erase-buffer ()
   "Erase contents of the current buffer"
@@ -18,10 +14,11 @@
   (interactive)
   (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
 
-(global-set-key (kbd "M-Z") 'zap-up-to-char)
-(global-set-key (kbd "C-j") 'delete-indentation)
-(global-set-key (kbd "C-c r") 'query-replace)
-(global-set-key (kbd "C-x P") 'previous-buffer)
 (global-set-key (kbd "C-c ;") 'mkaschenko/toggle-comment-on-line)
+(global-set-key (kbd "C-c r") 'query-replace)
+(global-set-key (kbd "C-j")   'delete-indentation)
+(global-set-key (kbd "M-Z")   'zap-up-to-char)
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (provide 'init-misc)
