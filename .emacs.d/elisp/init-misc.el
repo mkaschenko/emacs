@@ -1,4 +1,7 @@
-(setq-default indent-tabs-mode nil)
+(require 'misc)
+
+(setq-default indent-tabs-mode nil
+              truncate-lines   t)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups"))
       require-final-newline  'visit-save)
