@@ -32,10 +32,6 @@
 (require 'init-ui)
 (require 'init-winner)
 
-;;; TODO: refactor
-;; (require 'init-web-mode)
-;; (require 'init-javascript)
-;; (require 'init-typescript)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
