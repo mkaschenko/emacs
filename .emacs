@@ -5,6 +5,7 @@
 (require 'init-ag)
 (require 'init-browsers)
 (require 'init-compilation)
+(require 'init-c++)
 (require 'init-css)
 (require 'init-dash-at-point)
 (require 'init-dired)
