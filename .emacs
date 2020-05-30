@@ -41,10 +41,4 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (magit-popup go-mode ox-gfm marshal rspec-mode yari yaml-mode smex smartparens rubocop robe restclient projectile markdown-mode idomenu ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dired-details dash-at-point csv-mode coverage clojure-cheatsheet clj-refactor buffer-move aggressive-indent ag))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+    (magit magit-popup go-mode ox-gfm marshal rspec-mode yari yaml-mode smex smartparens rubocop robe restclient projectile markdown-mode idomenu ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dired-details dash-at-point csv-mode coverage clojure-cheatsheet clj-refactor buffer-move aggressive-indent ag))))
