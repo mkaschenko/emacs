@@ -1,3 +1,6 @@
+(require 'smartparens-config)
+(require 'smartparens-markdown)
+
 (setq sp-autoescape-string-quote nil)
 
 (defun mkaschenko/setup-smartparens-keys ()
