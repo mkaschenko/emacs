@@ -3,6 +3,7 @@
       magit-log-arguments              '("--graph" "--decorate" "--follow" "-n256")
       magit-merge-arguments            '("--ff-only")
       magit-popup-show-common-commands nil
+      magit-pull-arguments             '("--rebase")
       magit-rebase-arguments           '("--autosquash" "--autostash"))
 
 (global-set-key (kbd "C-c L") 'magit-find-file)
