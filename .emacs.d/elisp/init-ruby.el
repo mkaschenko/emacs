@@ -1,5 +1,5 @@
-(setq projectile-tags-command            "ripper-tags -Re -f TAGS"
-      rspec-autosave-buffer              t
+(setq rspec-autosave-buffer              t
+      rspec-use-spring-when-possible     nil
       ruby-insert-encoding-magic-comment nil)
 
 (defun mkaschenko/setup-ruby-keys ()
@@ -16,6 +16,7 @@
   (linum-mode +1)
   (robe-mode +1)
   (show-paren-mode +1)
+  (smartparens-mode +1)
   (subword-mode +1)
   (mkaschenko/setup-ruby-keys))
 
