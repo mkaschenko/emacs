@@ -10,15 +10,15 @@
   (setq frame-background-mode 'dark)
   (load-theme 'solarized t nil))
 
-(defun mkaschenko/hours ()
-  (string-to-number (format-time-string "%H" (current-time))))
+(defun mkaschenko/hours (time)
+  (string-to-number (format-time-string "%H" time)))
 
 (defun mkaschenko/daytime? (hours)
   (and (>= hours 6) (< hours 20)))
 
 (defun mkaschenko/solarized ()
   (interactive)
-  (if (mkaschenko/daytime? (mkaschenko/hours))
+  (if (mkaschenko/daytime? (mkaschenko/hours (current-time)))
       (mkaschenko/solarized-light)
     (mkaschenko/solarized-dark)))
 
