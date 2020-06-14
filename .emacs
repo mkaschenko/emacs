@@ -15,6 +15,7 @@
 (require 'init-ibuffer)
 (require 'init-ido)
 (require 'init-imenu)
+(require 'init-javascript)
 (require 'init-linum)
 (require 'init-lisps)
 (require 'init-magit)
