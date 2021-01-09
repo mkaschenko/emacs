@@ -1,5 +1,3 @@
-(package-initialize)
-
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
 (require 'init-ace-jump)
@@ -36,6 +34,7 @@
 (require 'init-ui)
 (require 'init-winner)
 
+;; TODO: (require 'init-emmet) https://github.com/smihica/emmet-mode
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -43,5 +42,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (magit magit-popup go-mode ox-gfm marshal rspec-mode yari yaml-mode smex smartparens rubocop robe restclient projectile markdown-mode idomenu ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dired-details dash-at-point csv-mode coverage clojure-cheatsheet clj-refactor buffer-move aggressive-indent ag))))
+   '(robe rubocop ace-jump-mode inf-ruby emmet-mode magit magit-popup ox-gfm marshal rspec-mode yari yaml-mode smex smartparens restclient projectile markdown-mode idomenu ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dired-details dash-at-point csv-mode clojure-cheatsheet clj-refactor buffer-move aggressive-indent ag)))
