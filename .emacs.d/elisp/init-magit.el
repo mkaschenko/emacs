@@ -1,10 +1,5 @@
 (setq magit-completing-read-function   'magit-ido-completing-read
-      magit-fetch-arguments            '("--prune")
-      magit-log-arguments              '("--graph" "--decorate" "--follow" "-n256")
-      magit-merge-arguments            '("--ff-only")
-      magit-popup-show-common-commands nil
-      magit-pull-arguments             '("--rebase")
-      magit-rebase-arguments           '("--autosquash" "--autostash"))
+      magit-popup-show-common-commands nil)
 
 (global-set-key (kbd "C-c L") 'magit-find-file)
 (global-set-key (kbd "C-c b") 'magit-blame)
