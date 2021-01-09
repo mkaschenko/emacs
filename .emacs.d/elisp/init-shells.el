@@ -1,4 +1,4 @@
-(global-set-key (kbd "C-c S") 'shell)
-(global-set-key (kbd "C-c s") 'eshell)
+(global-set-key (kbd "C-c S") 'eshell)
+(global-set-key (kbd "C-c s") 'shell)
 
 (provide 'init-shells)

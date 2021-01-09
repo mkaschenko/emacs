@@ -26,6 +26,7 @@
 (require 'init-projectile)
 (require 'init-restclient)
 (require 'init-ruby)
+(require 'init-shell-script)
 (require 'init-shells)
 (require 'init-smartparens)
 (require 'init-solarized-theme)
