@@ -27,7 +27,7 @@
   (define-key paredit-mode-map (kbd "C-c 9") 'paredit-forward-barf-sexp)
   (define-key paredit-mode-map (kbd "C-c :") 'clojure-toggle-keyword-string)
   (define-key paredit-mode-map (kbd "C-x j") 'paredit-newline)
-  (define-key paredit-mode-map (kbd "C-j")   'delete-indentation))
+  (define-key paredit-mode-map (kbd "C-c C-j") 'delete-indentation))
 
 ;; (global-set-key (kbd "C-c C-z") 'cider-switch-to-repl-buffer)
 

@@ -2,6 +2,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
+(require 'init-ace-jump)
 (require 'init-ag)
 (require 'init-browsers)
 (require 'init-compilation)
