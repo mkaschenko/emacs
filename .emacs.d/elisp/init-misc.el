@@ -12,6 +12,13 @@
   (let ((inhibit-read-only t))
     (erase-buffer)))
 
+(defun mkaschenko/erase-buffer-newline ()
+  "Erase contents of the current buffer and insert a final newline"
+  (interactive)
+  (let ((inhibit-read-only t))
+    (erase-buffer)
+    (comint-send-input)))
+
 (defun mkaschenko/toggle-comment-on-line ()
   "Comment or uncomment the current line"
   (interactive)
