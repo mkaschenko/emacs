@@ -42,4 +42,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(robe rubocop ace-jump-mode inf-ruby emmet-mode magit magit-popup ox-gfm marshal rspec-mode yari yaml-mode smex smartparens restclient projectile markdown-mode idomenu ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dired-details dash-at-point csv-mode clojure-cheatsheet clj-refactor buffer-move aggressive-indent ag)))
+   '(smartparens dash markdown-mode robe rubocop ace-jump-mode inf-ruby emmet-mode magit magit-popup ox-gfm marshal rspec-mode yari yaml-mode smex restclient projectile idomenu ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dired-details dash-at-point csv-mode clojure-cheatsheet clj-refactor buffer-move aggressive-indent ag)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
