@@ -1,6 +1,6 @@
-(setq cider-prompt-for-symbol nil
-      cider-prompt-save-file-on-load 'always-save
-      cljr-warn-on-eval nil
+(setq cider-prompt-for-symbol           nil
+      cider-prompt-save-file-on-load    'always-save
+      cljr-warn-on-eval                 nil
       clojure-align-forms-automatically t)
 
 (defun mkaschenko/setup-lisp ()
