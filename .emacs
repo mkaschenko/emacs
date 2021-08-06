@@ -7,6 +7,7 @@
 (require 'init-compilation)
 (require 'init-css)
 (require 'init-dash-search)
+(require 'init-dictionary-at-point)
 (require 'init-dired)
 (require 'init-expand-region)
 (require 'init-flyspell)
