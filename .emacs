@@ -6,7 +6,7 @@
 (require 'init-c++)
 (require 'init-compilation)
 (require 'init-css)
-(require 'init-dash-at-point)
+(require 'init-dash-search)
 (require 'init-dired)
 (require 'init-expand-region)
 (require 'init-flyspell)
