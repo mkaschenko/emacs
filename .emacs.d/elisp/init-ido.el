@@ -1,6 +1,7 @@
+(require 'flx-ido)
 (require 'ido-completing-read+)
 (require 'ido-yes-or-no)
-(require 'flx-ido)
+(require 'smex)
 
 (ido-mode t)
 (ido-everywhere t)
