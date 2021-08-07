@@ -6,4 +6,7 @@
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-c l") 'magit-log-buffer-file)
 
+(add-hook 'magit-mode-hook (lambda ()
+                             (setq truncate-lines nil)))
+
 (provide 'init-magit)
