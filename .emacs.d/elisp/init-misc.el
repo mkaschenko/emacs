@@ -1,7 +1,9 @@
 (require 'misc)
 
-(setq-default indent-tabs-mode nil
-              truncate-lines   t)
+(setq-default global-auto-revert-mode t
+              indent-tabs-mode nil
+              kill-buffer-query-functions nil ; https://emacs.stackexchange.com/a/46087
+              truncate-lines nil)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups"))
       require-final-newline  'visit-save)
@@ -27,7 +29,10 @@
 (defun mkaschenko/pbcopy-on-region (&optional start end)
   (interactive "r")
   (call-process-region start end "pbcopy")
-  (keyboard-quit))
+  (keyboard-escape-quit)
+  (message "Copied"))
+
+(global-unset-key (kbd "C-z"))
 
 (global-set-key (kbd "C-c ;") 'mkaschenko/toggle-comment-on-line)
 (global-set-key (kbd "C-c r") 'query-replace)
