@@ -1,3 +1,6 @@
+(require 'projectile)
+(require 'rspec-mode)
+
 (setq rspec-autosave-buffer              t
       rspec-use-spring-when-possible     nil
       ruby-insert-encoding-magic-comment nil)
@@ -33,5 +36,8 @@
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
 (add-hook 'dired-mode-hook 'rspec-dired-mode)
+
+(add-hook 'rspec-mode-hook (lambda ()
+                             (define-key rspec-verifiable-mode-keymap (kbd "t") 'projectile-toggle-between-implementation-and-test)))
 
 (provide 'init-ruby)
