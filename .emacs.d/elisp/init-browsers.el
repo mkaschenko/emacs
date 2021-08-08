@@ -1,11 +1,16 @@
+(require 'shell)
+
 (setq eww-search-prefix "https://duckduckgo.com/html/?kd=-1&q=")
 
-(defun mkaschenko/duckduckgo-search (query)
-  (interactive "sDuckDuckGo: ")
-  (browse-url
-   (concat "https://duckduckgo.com/?q=" (replace-regexp-in-string " " "+" query))))
+(defun mkaschenko/visit-or-search (uri-or-keywords)
+  (interactive "sEnter URI or keywords: ")
+  (if (string-prefix-p "http" uri-or-keywords t)
+      (browse-url uri-or-keywords)
+    (browse-url (concat "https://duckduckgo.com/?q=" (url-hexify-string uri-or-keywords)))))
 
-(global-set-key (kbd "C-c W") 'browse-url)
-(global-set-key (kbd "C-c w") 'mkaschenko/duckduckgo-search)
+(define-key shell-mode-map (kbd "C-c C-w") nil)
+
+(global-set-key (kbd "C-c w") 'mkaschenko/visit-or-search)
+(global-set-key (kbd "C-c C-w") 'browse-url-at-point)
 
 (provide 'init-browsers)
