@@ -13,4 +13,4 @@
 (global-set-key (kbd "C-c w") 'mkaschenko/visit-or-search)
 (global-set-key (kbd "C-c C-w") 'browse-url-at-point)
 
-(provide 'init-browsers)
+(provide 'init-browsing)

@@ -2,7 +2,7 @@
 
 (require 'init-ace-jump)
 (require 'init-ag)
-(require 'init-browsers)
+(require 'init-browsing)
 (require 'init-c++)
 (require 'init-compilation)
 (require 'init-css)
