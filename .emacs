@@ -4,7 +4,6 @@
 (require 'init-ag)
 (require 'init-browsing)
 (require 'init-c++)
-(require 'init-compilation)
 (require 'init-css)
 (require 'init-dash-search)
 (require 'init-dictionary-at-point)
