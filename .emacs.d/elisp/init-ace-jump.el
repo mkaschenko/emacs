@@ -3,7 +3,7 @@
 (require 'org)
 (require 'paredit)
 
-(setq ace-jump-mode-case-fold    nil
+(setq ace-jump-mode-case-fold    t
       ace-jump-mode-submode-list '(ace-jump-char-mode
                                    ace-jump-line-mode
                                    ace-jump-word-mode))
