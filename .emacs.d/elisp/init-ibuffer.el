@@ -1,3 +1,5 @@
+(require 'ibuffer)
+
 (setq ibuffer-formats '((mark " "
                               (name 35 35 :left :elide)
                               "   "
@@ -11,8 +13,8 @@
                               " "
                               filename)))
 
-(global-set-key (kbd "C-x C-b") 'ibuffer)
-
 (add-hook 'ibuffer-mode-hook 'ibuffer-auto-mode)
+
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (provide 'init-ibuffer)
