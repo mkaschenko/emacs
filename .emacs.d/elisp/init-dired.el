@@ -12,7 +12,7 @@
       ls-lisp-use-insert-directory-program nil)
 
 (defun mkaschenko/dired-hide ()
-  (dired-mark-files-regexp "^\\.git$\\|^\\.DS_Store$")
+  (dired-mark-files-regexp "^\\.DS_Store$")
   (dired-do-kill-lines)
   (message nil))
 
