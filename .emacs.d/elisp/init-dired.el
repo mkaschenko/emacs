@@ -1,4 +1,5 @@
 (require 'dired-details)
+(require 'dired-x)
 (require 'ls-lisp)
 
 (setq-default dired-details-hidden-string "--- ")
