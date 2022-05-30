@@ -4,7 +4,8 @@
 
 (defun mkaschenko/visit-or-search (uri-or-keywords)
   (interactive "sEnter URI or keywords: ")
-  (if (string-prefix-p "http" uri-or-keywords t)
+  (if (or (string-prefix-p "http://" uri-or-keywords t)
+          (string-prefix-p "https://" uri-or-keywords t))
       (browse-url uri-or-keywords)
     (browse-url (concat "https://duckduckgo.com/?q=" (url-hexify-string uri-or-keywords)))))
 
