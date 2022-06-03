@@ -5,10 +5,10 @@
 (setq-default dired-details-hidden-string "--- ")
 
 (setq dired-auto-revert-buffer t
-      dired-dwim-target        t
-      dired-listing-switches   "-alh"
-      dired-use-ls-dired       nil
-      ls-lisp-dirs-first       t
+      dired-dwim-target t
+      dired-listing-switches "-alh"
+      dired-use-ls-dired nil
+      ls-lisp-dirs-first t
       ls-lisp-use-insert-directory-program nil)
 
 (defun mkaschenko/dired-hide ()

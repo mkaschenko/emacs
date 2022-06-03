@@ -1,5 +1,3 @@
-(require 'ibuffer)
-
 (setq ibuffer-formats '((mark " "
                               (name 35 35 :left :elide)
                               "   "
