@@ -3,6 +3,7 @@
 
 (defun mkaschenko/setup-lisp ()
   (aggressive-indent-mode +1)
+  (auto-revert-mode +1)
   (display-line-numbers-mode +1)
   (eldoc-mode +1)
   (flyspell-prog-mode)
