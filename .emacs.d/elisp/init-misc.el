@@ -1,12 +1,13 @@
 (require 'misc)
 
 (setq-default global-auto-revert-mode t
-              indent-tabs-mode nil
               kill-buffer-query-functions nil ; https://emacs.stackexchange.com/a/46087
-              truncate-lines nil)
+              truncate-lines t
+              indent-tabs-mode nil)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups"))
-      require-final-newline  'visit-save)
+      require-final-newline 'visit-save
+      tags-revert-without-query 1)
 
 (defun mkaschenko/erase-buffer ()
   "Erase contents of the current buffer"
@@ -29,15 +30,19 @@
 (defun mkaschenko/pbcopy-on-region (&optional start end)
   (interactive "r")
   (call-process-region start end "pbcopy")
-  (keyboard-escape-quit)
-  (message "Copied"))
+  (setq deactivate-mark t))
 
-(global-unset-key (kbd "C-z"))
+(global-set-key (kbd "<f7>") 'beginning-of-buffer)
+(global-set-key (kbd "<f8>") 'end-of-buffer)
+(global-set-key (kbd "<f9>") 'scroll-up-command)
+(global-set-key (kbd "<f10>") 'scroll-down-command)
+(global-set-key (kbd "<f11>") 'scroll-other-window)
+(global-set-key (kbd "<f12>") 'scroll-other-window-down)
 
 (global-set-key (kbd "C-c ;") 'mkaschenko/toggle-comment-on-line)
-(global-set-key (kbd "C-c r") 'query-replace)
 (global-set-key (kbd "C-c C-j") 'delete-indentation)
-(global-set-key (kbd "M-z") 'zap-up-to-char)
+(global-set-key (kbd "C-c \\") 'toggle-truncate-lines)
+(global-set-key (kbd "C-c r") 'query-replace)
 (global-set-key (kbd "M-+") 'mkaschenko/pbcopy-on-region)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

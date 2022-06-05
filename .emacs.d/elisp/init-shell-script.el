@@ -1,7 +1,7 @@
 (defun mkaschenko/setup-sh ()
   (aggressive-indent-mode +1)
-  (flyspell-prog-mode)
   (display-line-numbers-mode +1)
+  (flyspell-prog-mode)
   (show-paren-mode +1)
   (smartparens-mode +1))
 

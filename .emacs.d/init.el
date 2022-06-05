@@ -18,13 +18,12 @@
 (require 'init-magit)
 (require 'init-misc)
 (require 'init-multiple-cursors)
-;; (require 'init-org)
 (require 'init-package)
 (require 'init-projectile)
 (require 'init-restclient)
 (require 'init-ruby)
 (require 'init-shell-script)
-(require 'init-shells)
+(require 'init-shell)
 (require 'init-smartparens)
 (require 'init-sql)
 (require 'init-text)
@@ -38,7 +37,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(inf-clojure yari yaml-mode smex smartparens slim-mode rubocop rspec-mode robe restclient request projectile ox-gfm marshal magit-popup magit idomenu ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region emmet-mode dired-details csv-mode clojure-cheatsheet clj-refactor buffer-move aggressive-indent ag ace-jump-mode)))
+   '(yari yaml-mode smex smartparens slim-mode rubocop rspec-mode restclient request projectile ox-gfm marshal magit-popup magit ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region dired-details csv-mode clojure-cheatsheet clj-refactor buffer-move aggressive-indent ag ace-jump-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
