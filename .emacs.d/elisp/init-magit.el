@@ -6,5 +6,5 @@
 
 (provide 'init-magit)
 
-;; (global-set-key (kbd "C-c L") 'magit-find-file)
-;; (global-set-key (kbd "C-c l") 'magit-log-buffer-file)
+;; (global-set-key (kbd "C-c F") 'magit-find-file)
+;; (global-set-key (kbd "C-c L") 'magit-log-buffer-file)
