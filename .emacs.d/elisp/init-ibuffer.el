@@ -1,4 +1,5 @@
-(setq ibuffer-formats '((mark " "
+(setq ibuffer-display-summary nil
+      ibuffer-formats '((mark " "
                               (name 35 35 :left :elide)
                               "   "
                               (mode 18 18 :left :elide)
