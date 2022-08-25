@@ -4,8 +4,8 @@
 
 (defun mkaschenko/setup-ruby-keys ()
   (define-key ruby-mode-map (kbd "C-c C-c") 'inf-ruby-console-auto)
-  (define-key ruby-mode-map (kbd "C-c C-y") 'yari)
-  (define-key ruby-mode-map (kbd "C-c C-v") 'rubocop-autocorrect-current-file))
+  (define-key ruby-mode-map (kbd "C-c C-v") 'rubocop-autocorrect-current-file)
+  (define-key ruby-mode-map (kbd "C-c y") 'yari))
 
 (add-hook 'ruby-mode-hook 'mkaschenko/setup-ruby-keys)
 
