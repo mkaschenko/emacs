@@ -1,5 +1,3 @@
-;;; unused
-
 (add-to-list 'auto-mode-alist '("\\.txt\\'" . org-mode))
 
 (setq org-completion-use-ido t
