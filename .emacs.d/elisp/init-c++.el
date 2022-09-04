@@ -1,7 +1,6 @@
 (add-to-list 'auto-mode-alist '("\\.ino\\'" . c++-mode))
 
 (defun mkaschenko/setup-c++ ()
-  (aggressive-indent-mode +1)
   (display-line-numbers-mode +1)
   (flyspell-prog-mode)
   (show-paren-mode +1)

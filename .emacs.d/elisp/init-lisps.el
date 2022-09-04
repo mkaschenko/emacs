@@ -2,7 +2,6 @@
       cider-prompt-save-file-on-load 'always-save)
 
 (defun mkaschenko/setup-lisp ()
-  (aggressive-indent-mode +1)
   (auto-revert-mode +1)
   (display-line-numbers-mode +1)
   (eldoc-mode +1)

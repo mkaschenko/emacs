@@ -10,7 +10,6 @@
 (add-hook 'ruby-mode-hook 'mkaschenko/setup-ruby-keys)
 
 (defun mkaschenko/setup-ruby ()
-  (aggressive-indent-mode +1)
   (auto-revert-mode +1)
   (eldoc-mode +1)
   (display-line-numbers-mode +1)
