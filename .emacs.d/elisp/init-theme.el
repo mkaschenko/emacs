@@ -2,6 +2,6 @@
 
 (setq custom-safe-themes t)
 
-;; (load-theme 'solarized-lite)
+(load-theme 'solarized-lite)
 
 (provide 'init-theme)
