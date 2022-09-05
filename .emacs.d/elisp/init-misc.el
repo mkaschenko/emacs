@@ -1,5 +1,3 @@
-(require 'misc)
-
 (setq-default global-auto-revert-mode t
               kill-buffer-query-functions nil ; https://emacs.stackexchange.com/a/46087
               truncate-lines t
@@ -44,6 +42,7 @@
 (global-set-key (kbd "C-c \\") 'toggle-truncate-lines)
 (global-set-key (kbd "C-c r") 'query-replace)
 (global-set-key (kbd "M-+") 'mkaschenko/pbcopy-on-region)
+(global-set-key (kbd "M-Z") 'zap-up-to-char)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
