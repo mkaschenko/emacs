@@ -10,7 +10,6 @@
 (add-hook 'ruby-mode-hook 'mkaschenko/setup-ruby-keys)
 
 (defun mkaschenko/setup-ruby ()
-  (eldoc-mode +1)
   (display-line-numbers-mode +1)
   (flyspell-prog-mode)
   (show-paren-mode +1)

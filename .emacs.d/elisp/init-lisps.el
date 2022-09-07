@@ -23,9 +23,3 @@
 (add-hook 'paredit-mode-hook 'mkaschenko/setup-paredit-keys)
 
 (provide 'init-lisps)
-
-;; (defun mkaschenko/setup-cider-keys ()
-;;   (define-key cider-mode-map (kbd "C-M-y") 'flyspell-auto-correct-previous-word)
-;;   (define-key cider-mode-map (kbd "C-c M") 'complete-symbol))
-
-;; (add-hook 'cider-mode-hook 'mkaschenko/setup-cider-keys)
