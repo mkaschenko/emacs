@@ -1,6 +1,6 @@
-(defun mkaschenko/dictionary-search ()
-  (interactive)
-  (shell-command (concat "open dict://\"" (read-string "Dictionary: " (thing-at-point 'symbol)) "\"")))
+(defun mkaschenko/dictionary-search (query)
+  (interactive "sDictionary: ")
+  (shell-command (concat "open dict://\"" query "\"")))
 
 (global-set-key (kbd "C-c d") 'mkaschenko/dictionary-search)
 

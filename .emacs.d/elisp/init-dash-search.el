@@ -1,5 +1,5 @@
-(defun mkaschenko/dash-search ()
-  (interactive)
-  (shell-command (concat "open dash://" (url-hexify-string (read-string "Dash: " (thing-at-point 'symbol))))))
+(defun mkaschenko/dash-search (query)
+  (interactive "sDash: ")
+  (shell-command (concat "open dash://" (url-hexify-string query))))
 
 (provide 'init-dash-search)
