@@ -3,20 +3,6 @@
                                    ace-jump-line-mode
                                    ace-jump-word-mode))
 
-(global-set-key (kbd "C-j") 'ace-jump-mode)
+(global-set-key (kbd "C-c j") 'ace-jump-mode)
 
 (provide 'init-ace-jump)
-
-;; (require 'ace-jump-mode)
-;; (require 'magit)
-;; (require 'org)
-;; (require 'paredit)
-
-;; (define-key lisp-interaction-mode-map (kbd "C-j") nil)
-
-;; (define-key magit-file-section-map (kbd "C-j") nil)
-;; (define-key magit-diff-section-base-map (kbd "C-j") nil)
-
-;; (define-key org-mode-map (kbd "C-j") nil)
-
-;; (define-key paredit-mode-map (kbd "C-j") nil)
