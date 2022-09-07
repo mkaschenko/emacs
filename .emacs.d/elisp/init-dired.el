@@ -14,7 +14,6 @@
   (message nil))
 
 (add-hook 'dired-after-readin-hook 'mkaschenko/dired-hide)
-(add-hook 'dired-mode-hook 'auto-revert-mode)
 (add-hook 'dired-mode-hook 'dired-hide-details-mode)
 
 (provide 'init-dired)

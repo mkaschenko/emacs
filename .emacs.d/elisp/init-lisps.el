@@ -2,7 +2,6 @@
       cider-prompt-save-file-on-load 'always-save)
 
 (defun mkaschenko/setup-lisp ()
-  (auto-revert-mode +1)
   (display-line-numbers-mode +1)
   (eldoc-mode +1)
   (flyspell-prog-mode)
