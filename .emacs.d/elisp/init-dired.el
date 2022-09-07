@@ -1,8 +1,7 @@
 (require 'dired-x)
 (require 'ls-lisp)
 
-(setq dired-auto-revert-buffer t
-      dired-dwim-target t
+(setq dired-dwim-target t
       dired-listing-switches "-alh"
       dired-use-ls-dired nil
       ls-lisp-dirs-first t
