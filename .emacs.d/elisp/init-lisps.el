@@ -16,9 +16,7 @@
   (define-key paredit-mode-map (kbd "C-M-w") 'paredit-copy-as-kill)
   (define-key paredit-mode-map (kbd "C-c 0") 'paredit-forward-slurp-sexp)
   (define-key paredit-mode-map (kbd "C-c 9") 'paredit-forward-barf-sexp)
-  (define-key paredit-mode-map (kbd "C-c :") 'clojure-toggle-keyword-string)
-  (define-key paredit-mode-map (kbd "C-c j") 'paredit-newline)
-  (define-key paredit-mode-map (kbd "C-c C-j") 'delete-indentation))
+  )
 
 (add-hook 'paredit-mode-hook 'mkaschenko/setup-paredit-keys)
 

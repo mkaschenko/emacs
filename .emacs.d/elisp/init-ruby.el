@@ -3,7 +3,6 @@
       ruby-insert-encoding-magic-comment nil)
 
 (defun mkaschenko/setup-ruby-keys ()
-  (define-key ruby-mode-map (kbd "C-c C-c") 'inf-ruby-console-auto)
   (define-key ruby-mode-map (kbd "C-c C-v") 'rubocop-autocorrect-current-file)
   (define-key ruby-mode-map (kbd "C-c y") 'yari))
 

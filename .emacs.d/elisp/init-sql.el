@@ -13,6 +13,4 @@
 
 (add-hook 'sql-interactive-mode-hook 'mkaschenko/setup-sql)
 
-(global-set-key (kbd "C-c q") 'sql-postgres)
-
 (provide 'init-sql)
