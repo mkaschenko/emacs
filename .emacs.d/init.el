@@ -42,3 +42,9 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    '(yari yaml-mode smartparens slim-mode rubocop rspec-mode restclient request projectile ox-gfm marshal magit-popup magit inf-ruby ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region csv-mode clojure-cheatsheet clj-refactor buffer-move ag ace-jump-mode)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
