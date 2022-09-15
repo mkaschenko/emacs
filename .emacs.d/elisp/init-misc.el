@@ -19,6 +19,14 @@
     (erase-buffer)
     (comint-send-input)))
 
+;;; http://xahlee.info/emacs/emacs/emacs_new_empty_buffer.html
+(defun mkaschenko/new-buffer ()
+  "Create a new buffer, e.g. “untitled”, “untitled<2>”, “untitled<3>”, etc."
+  (interactive)
+  (let ((buf (generate-new-buffer "untitled")))
+    (switch-to-buffer buf)
+    (setq buffer-offer-save t)))
+
 (defun mkaschenko/comment-or-uncomment-current-line ()
   "Comment or uncomment the current line"
   (interactive)
@@ -29,6 +37,7 @@
   (call-process-region start end "pbcopy")
   (setq deactivate-mark t))
 
+(global-set-key (kbd "<f2>") 'mkaschenko/new-buffer)
 (global-set-key (kbd "<f7>") 'beginning-of-buffer)
 (global-set-key (kbd "<f8>") 'end-of-buffer)
 (global-set-key (kbd "<f9>") 'scroll-up-command)
