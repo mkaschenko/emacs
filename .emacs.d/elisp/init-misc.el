@@ -19,12 +19,12 @@
     (erase-buffer)
     (comint-send-input)))
 
-(defun mkaschenko/toggle-comment-on-line ()
+(defun mkaschenko/comment-or-uncomment-current-line ()
   "Comment or uncomment the current line"
   (interactive)
   (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
 
-(defun mkaschenko/pbcopy-on-region (&optional start end)
+(defun mkaschenko/pbcopy-region (&optional start end)
   (interactive "r")
   (call-process-region start end "pbcopy")
   (setq deactivate-mark t))
@@ -36,10 +36,10 @@
 (global-set-key (kbd "<f11>") 'scroll-other-window)
 (global-set-key (kbd "<f12>") 'scroll-other-window-down)
 
-(global-set-key (kbd "C-c ;") 'mkaschenko/toggle-comment-on-line)
+(global-set-key (kbd "C-c ;") 'mkaschenko/comment-or-uncomment-current-line)
 (global-set-key (kbd "C-c C-j") 'delete-indentation)
 (global-set-key (kbd "C-c r") 'query-replace)
-(global-set-key (kbd "M-+") 'mkaschenko/pbcopy-on-region)
+(global-set-key (kbd "M-+") 'mkaschenko/pbcopy-region)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
