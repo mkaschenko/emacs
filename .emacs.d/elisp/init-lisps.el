@@ -6,7 +6,7 @@
   (eldoc-mode +1)
   (flyspell-prog-mode)
   (paredit-mode +1)
-  (show-paren-mode +1))
+  (show-paren-mode -1))
 
 (add-hook 'clojure-mode-hook 'mkaschenko/setup-lisp)
 (add-hook 'emacs-lisp-mode-hook 'mkaschenko/setup-lisp)
