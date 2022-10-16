@@ -1,4 +1,4 @@
-(setq-default kill-buffer-query-functions nil ; https://emacs.stackexchange.com/a/46087
+(setq-default ;; kill-buffer-query-functions nil https://emacs.stackexchange.com/a/46087
               truncate-lines t
               indent-tabs-mode nil)
 
