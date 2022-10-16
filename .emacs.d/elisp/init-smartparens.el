@@ -1,8 +1,6 @@
 (require 'smartparens-config)
 (require 'smartparens-markdown)
 
-(setq sp-autoescape-string-quote nil)
-
 (defun mkaschenko/setup-smartparens-keys ()
   (define-key smartparens-mode-map (kbd "C-M-w") 'sp-copy-sexp)
   (define-key smartparens-mode-map (kbd "C-M-s") 'sp-splice-sexp)
