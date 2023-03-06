@@ -3,6 +3,7 @@
 (require 'init-ace-jump)
 (require 'init-ag)
 (require 'init-browsing)
+(require 'init-buffer-functions)
 (require 'init-buffer-menu)
 (require 'init-c++)
 (require 'init-css)
