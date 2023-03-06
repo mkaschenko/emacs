@@ -27,6 +27,11 @@
 (add-hook 'inf-ruby-mode-hook 'mkaschenko/setup-inf-ruby)
 (add-hook 'inf-ruby-mode-hook 'mkaschenko/setup-inf-ruby-keys)
 
+(defun mkaschenko/setup-yari-keys ()
+  (define-key yari-mode-map (kbd "C-c y") 'yari))
+
+(add-hook 'yari-mode-hook 'mkaschenko/setup-yari-keys)
+
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 (add-hook 'dired-mode-hook 'rspec-dired-mode)
 
