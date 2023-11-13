@@ -1,11 +1,11 @@
 (defun mkaschenko/erase-buffer ()
-  "Erase contents of the current buffer"
+  "Erase contents of the current buffer."
   (interactive)
   (let ((inhibit-read-only t))
     (erase-buffer)))
 
 (defun mkaschenko/erase-buffer-newline ()
-  "Erase contents of the current buffer and insert a final newline"
+  "Erase contents of the current buffer and insert a final newline."
   (interactive)
   (let ((inhibit-read-only t))
     (erase-buffer)

@@ -7,11 +7,12 @@
       tags-revert-without-query 1)
 
 (defun mkaschenko/comment-or-uncomment-current-line ()
-  "Comment or uncomment the current line"
+  "Comment or uncomment the current line."
   (interactive)
   (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
 
 (defun mkaschenko/pbcopy-region (&optional start end)
+  "Copy the region to the pasteboard."
   (interactive "r")
   (call-process-region start end "pbcopy")
   (setq deactivate-mark t))
