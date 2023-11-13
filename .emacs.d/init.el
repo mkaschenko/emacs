@@ -12,6 +12,7 @@
 (require 'init-dired)
 (require 'init-expand-region)
 (require 'init-flyspell)
+(require 'init-font-lock)
 (require 'init-html)
 ;; (require 'init-ibuffer)
 (require 'init-ido)
