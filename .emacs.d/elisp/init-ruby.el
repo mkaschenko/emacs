@@ -5,7 +5,7 @@
 (defun mkaschenko/setup-ruby ()
   (display-line-numbers-mode +1)
   (flyspell-prog-mode)
-  (show-paren-mode -1)
+  (show-paren-local-mode -1)
   (smartparens-mode +1)
   (subword-mode +1))
 
@@ -17,7 +17,7 @@
 (add-hook 'ruby-mode-hook 'mkaschenko/setup-ruby-keys)
 
 (defun mkaschenko/setup-inf-ruby ()
-  (show-paren-mode -1)
+  (show-paren-local-mode -1)
   (smartparens-mode +1)
   (subword-mode +1))
 

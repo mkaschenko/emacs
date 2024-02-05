@@ -3,7 +3,7 @@
 (defun mkaschenko/setup-js ()
   (display-line-numbers-mode +1)
   (flyspell-prog-mode)
-  (show-paren-mode +1)
+  (show-paren-local-mode -1)
   (smartparens-mode +1)
   (subword-mode +1))
 
