@@ -22,6 +22,7 @@
   (subword-mode +1))
 
 (defun mkaschenko/setup-inf-ruby-keys ()
+  (define-key inf-ruby-mode-map (kbd "C-c k") 'mkaschenko/erase-buffer-newline)
   (define-key inf-ruby-mode-map (kbd "C-c y") 'yari))
 
 (add-hook 'inf-ruby-mode-hook 'mkaschenko/setup-inf-ruby)
