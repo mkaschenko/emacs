@@ -38,6 +38,7 @@
 (require 'init-text)
 ;; (require 'init-theme)
 (require 'init-ui)
+(require 'init-web)
 (require 'init-winner)
 (require 'init-yaml)
 (custom-set-variables
@@ -46,7 +47,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(haml-mode minitest yaml-mode slim-mode yari smartparens rubocop restclient request projectile ox-gfm marshal magit-popup magit inf-ruby ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region clojure-cheatsheet clj-refactor buffer-move ag ace-jump-mode)))
+   '(web-mode haml-mode minitest yaml-mode slim-mode yari smartparens rubocop restclient request projectile ox-gfm marshal magit-popup magit inf-ruby ido-yes-or-no ido-ubiquitous gitignore-mode gitconfig-mode gitattributes-mode git-link fuzzy flx-ido expand-region clojure-cheatsheet clj-refactor buffer-move ag ace-jump-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
