@@ -1,3 +1,7 @@
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(require 'package)
+
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+(package-initialize)
 
 (provide 'init-package)
