@@ -1,6 +1,4 @@
-(setq rspec-autosave-buffer t
-      rspec-use-spring-when-possible nil
-      ruby-insert-encoding-magic-comment nil)
+(setq ruby-insert-encoding-magic-comment nil)
 
 (defun mkaschenko/setup-ruby ()
   (display-line-numbers-mode +1)
@@ -32,8 +30,6 @@
   (define-key yari-mode-map (kbd "C-c y") 'yari))
 
 (add-hook 'yari-mode-hook 'mkaschenko/setup-yari-keys)
-
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
-(add-hook 'dired-mode-hook 'rspec-dired-mode)
 
 (provide 'init-ruby)
