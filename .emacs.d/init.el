@@ -11,6 +11,7 @@
 (require 'init-dictionary-search)
 (require 'init-dired)
 (require 'init-expand-region)
+(require 'init-eshell)
 (require 'init-flyspell)
 (require 'init-font-lock)
 (require 'init-haml)
