@@ -38,6 +38,7 @@
 (require 'init-sql)
 (require 'init-text)
 ;; (require 'init-theme)
+(require 'init-typescript)
 (require 'init-ui)
 (require 'init-web)
 (require 'init-winner)
@@ -54,8 +55,8 @@
                    haml-mode ido-ubiquitous ido-yes-or-no inf-clojure
                    inf-ruby js-comint magit magit-popup marshal
                    minitest nodejs-repl ox-gfm projectile python-mode
-                   request restclient rubocop slim-mode smartparens
-                   web-mode yaml-mode yari)))
+                   restclient rubocop slim-mode smartparens
+                   typescript-mode web-mode yaml-mode yari)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
