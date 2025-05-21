@@ -1,4 +1,4 @@
-(setq magit-completing-read-function 'magit-ido-completing-read
+(setq magit-completing-read-function 'ido-completing-read
       magit-popup-show-common-commands nil)
 
 (global-set-key (kbd "C-c B") 'magit-blame-addition)
