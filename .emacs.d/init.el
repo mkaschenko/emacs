@@ -6,6 +6,7 @@
 (require 'init-buffer-functions)
 (require 'init-buffer-menu)
 (require 'init-c++)
+(require 'init-claude-code)
 (require 'init-css)
 (require 'init-dash-search)
 (require 'init-dictionary-search)
@@ -56,7 +57,9 @@
                    inf-ruby js-comint magit magit-popup marshal
                    minitest nodejs-repl ox-gfm projectile python-mode
                    restclient rubocop slim-mode smartparens
-                   typescript-mode web-mode yaml-mode yari)))
+                   typescript-mode web-mode yaml-mode yari))
+ '(package-vc-selected-packages
+   '((claude-code :url "https://github.com/stevemolitor/claude-code.el"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
