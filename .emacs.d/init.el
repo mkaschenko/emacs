@@ -29,6 +29,7 @@
 ;; (require 'init-org)
 (require 'init-package)
 (require 'init-projectile)
+(require 'init-python)
 (require 'init-restclient)
 (require 'init-ruby)
 (require 'init-shell-script)
