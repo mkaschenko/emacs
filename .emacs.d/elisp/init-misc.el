@@ -3,6 +3,7 @@
               indent-tabs-mode nil)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups"))
+      blink-matching-paren nil
       require-final-newline 'visit-save
       tags-revert-without-query 1)
 
